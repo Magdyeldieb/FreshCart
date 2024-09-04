@@ -1,0 +1,59 @@
+@if (detailsProduct) {
+
+  <section>
+    <h1 class="text-center text-main my-2">Details Product</h1>
+  <div class="row align-items-center m-0">
+    <div class="col-md-3">
+        <owl-carousel-o [options]="customOptionsPro">
+            <ng-container *ngFor="let Products of detailsProduct.images">
+              <ng-template carouselSlide>
+                <div>
+                  <img  class="w-100" [src]="Products" [alt]="detailsProduct.title">
+                  <h3 class="h6 text-main">{{detailsProduct.title}}</h3>
+                </div>
+              </ng-template>
+            </ng-container>
+        </owl-carousel-o>
+      <!-- <div>
+        <img [src]=" detailsProduct.imageCover " class="w-100" [alt]="detailsProduct.title">
+      </div> -->
+    </div>
+    <div class="col-md-9 ">
+      <div class="pro-details position-relative">
+        
+        @for (pro of product; track detailsProduct._id) {}
+
+        @if(!wishListData.includes($any(detailsProduct._id))){
+          <i (click)="addFav(detailsProduct .id)" class="fa-regular fa-heart heart cr "></i>
+        }
+        @else if (wishListData.includes($any(detailsProduct._id))) {
+          <i (click)="removeFav(detailsProduct.id)" class="fa-solid fa-heart heart cr "></i>
+        }
+        <h3>{{detailsProduct.title}}</h3>
+        <p class="text-muted">{{detailsProduct.description}}</p>
+
+        <h4 class="h6">{{detailsProduct.category.name}}</h4>
+
+        <div class="d-flex justify-content-between align-items-center">
+          <span> {{detailsProduct.price}}EGP </span>
+
+          <div>
+            @for (num of [1,2,3,4,5].slice(0, detailsProduct.ratingsAverage); track $index) {
+              <span> <i class="fas fa-star rating-color"></i> </span>
+            }
+            @if (detailsProduct.ratingsAverage % 1 !== 0) {
+              <i class="fa-solid fa-star-half-stroke rating-color"></i>
+            }
+
+
+          <span class="text-muted" >{{detailsProduct.ratingsAverage}}</span>
+          </div>
+
+        </div>
+        <button (click)="addCart(detailsProduct.id)" class="btn-main w-100"> + Add To Cart</button>
+      </div>
+    </div>
+  </div>
+  </section>
+
+}

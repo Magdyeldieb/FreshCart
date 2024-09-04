@@ -1,0 +1,65 @@
+{
+  "navbar":{
+    "home": "Home",
+    "products": "Products",
+    "categories": "Categories",
+    "brands": "Brands",
+    "login": "Login",
+    "register": "Register", 
+    "forget": "Forget Password",
+    "cart": "Cart",
+    "profile": "Profile",
+    "signout": "Sign Out",
+    "search": "Search",
+    "lang": "Lang"
+  },
+  "home":{
+    "popular": "Popular",
+    "new": "New",
+    "discount": "Discount",
+    "category": "Category",
+    "brand": "Brand",
+    "price": "Price"
+  },
+  "products":{
+    "products": "Products"
+  },  
+  "categories":{
+    "categories": "Categories"
+  },
+  "brands":{
+    "brands": "Brands"
+  },
+  "cart":{
+    "cart": "Cart"
+  },
+  "profile":{
+    "profile": "Profile"
+  }, 
+  "forget":{
+    "forget": "Forget Password"
+  },
+  "login":{
+    "login": "Login"
+  },
+  "register":{
+    "register": "Register"
+  },
+  "footer":{
+    "appstore": "App Store",
+    "playstore": "Play Store",
+    "download": "Download",
+    "contact": "Contact",
+    "about": "About",
+    "help": "Help",
+    "policy": "Policy",
+    "terms": "Terms",
+    "copyright": "Copyright"
+  },
+  "search":{ "search": "Search" },
+  "lang":{ "lang": "Lang" },
+  "users":{ "users": "Users" },
+  "signout":{ "signout": "Sign Out" }
+
+
+}

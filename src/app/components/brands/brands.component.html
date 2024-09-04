@@ -1,0 +1,16 @@
+<section class="py-4" >
+    <h2 class="text-center text-main" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">All Brands</h2>
+    <div class="row g-4 justify-content-center m-0">
+      @for (brand of brands; track brand._id) {
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+          <div class="product h-100">
+      <header role="button" [routerLink]="['/branddetails', brand._id]">
+          <img class="w-100" [src]="brand.image" [alt]="brand.name">
+      </header>
+  </div>
+  </div>
+      }
+
+    </div>
+
+</section>

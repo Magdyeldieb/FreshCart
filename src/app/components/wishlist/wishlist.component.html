@@ -1,0 +1,47 @@
+@if (products.length> 0) {
+
+  <section class="py-4">
+    <h2>WishList Products</h2>
+    <div class="row g-4 justify-content-center">
+      @for (product of products; track product._id) {
+        <div class="col-md-2">
+          <div class="product p-2">
+            @if(!wishListData.includes($any(product._id))){
+              <i (click)="addFav(product.id)" class="fa-regular fa-heart heart  cr "></i>
+            }
+            @else if (wishListData.includes($any(product._id))) {
+              <i (click)="removeFav(product.id)" class="fa-solid fa-heart heart  cr  "></i>
+            }
+
+              <header role="button" [routerLink]="['/productdetails', product._id]">
+                  <img class="w-100" [src]="product.imageCover" [alt]="product.title">
+                  <h3 class="h6">{{product.title |cutText : 3}}</h3>
+                  <h4 class="h6">{{product.category.name}}</h4>
+                  <div class="d-flex align-items-center justify-content-between small">
+
+                      <span class="font-sm">{{product.price | currency :'E£'}}</span>
+                     
+                        <div>
+                          @for (num of [1,2,3,4,5].slice(0, product.ratingsAverage); track $index) {
+                            <span> <i class="fas fa-star rating-color"></i> </span>
+                          }
+                          @if (product.ratingsAverage % 1 !== 0) {
+                            <i class="fa-solid fa-star-half-stroke rating-color"></i>
+                          }
+                        <span class="text-muted" >{{product.ratingsAverage}}</span>
+                        </div>
+
+                  </div>
+              </header>
+              <footer>
+                  <button (click)="addProduct(product._id,btnAdd)"#btnAdd class="btn-main w-100 py-2">+AddToCart</button>
+              </footer>
+          </div>
+      </div>
+      }
+
+    </div>
+</section>
+
+}
+

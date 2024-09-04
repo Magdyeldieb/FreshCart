@@ -1,0 +1,192 @@
+{
+  "navbar":{
+    "home": "الرئيسية",
+    "products": "المنتجات",
+    "categories": "التصنيفات",
+    "brands": "الماركات",
+    "login": "تسجيل الدخول",
+    "register": "تسجيل",
+    "forget": "نسيت كلمة المرور",
+    "cart": "عربة التسوق",
+    "profile": "الملف الشخصي",
+    "signout": "تسجيل الخروج",
+    "search": "بحث",
+    "lang": "اللغة"
+  },
+  "home":{
+    "popular": "مشهورة",
+    "new": "جديدة",
+    "discount": "خصم",
+    "category": "التصنيف",
+    "brand": "الماركة",
+    "price": "السعر"
+  },
+  "products":{
+    "products": "المنتجات"
+  },
+  "categories":{
+    "categories": "التصنيفات"
+  },
+  "brands":{
+    "brands": "الماركات"
+  },
+  "orders":{
+    "orders": "الطلبات"
+  },
+  "allorders":{
+    "allorders": "جميع الطلبات"
+},
+  "users":{
+    "users": "المستخدمين"
+  },
+
+  "login":{
+    "login": "تسجيل الدخول"
+  },
+  "register":{  
+    "register": "تسجيل" 
+  },  
+  "forget":{  
+    "forget": "نسيت كلمة المرور"  
+  },
+  "cart":{
+    "cart": "عربة التسوق"
+  },
+  "profile":{ 
+    "profile": "الملف الشخصي"
+  },
+  "signout":{
+    "signout": "تسجيل الخروج"
+  },
+  "search":{
+    "search": "بحث"
+  },
+  "lang":{
+    "lang": "اللغة"
+  } ,
+  "footer":{
+    "appstore": "المتجر",
+    "playstore": "التطبيق",
+    "download": "تحميل",
+    "contact": "اتصل بنا",
+    "about": "عنا",
+    "help": "مساعدة",
+    "policy": "سياسة الخصوصية",
+    "terms": "الشروط والاحكام",
+    "copyright": "حقوق النشر"
+  },
+  "error":{
+    "error": "خطأ"
+  },
+  "success":{
+    "success": "نجاح"
+  },
+  "warning":{
+    "warning": "تحذير"
+  },
+  "info":{
+    "info": "معلومات"
+  },
+  "admin":{
+    "admin": "المشرف"
+  },
+  "user":{
+    "user": "المستخدم"
+  },
+  "logout":{
+    "logout": "تسجيل الخروج"  
+  },
+  "email":{
+    "email": "البريد الالكتروني"
+  },
+  "password":{
+    "password": "كلمة المرور"
+  },
+  "reset":{
+    "reset": "اعادة تعيين كلمة المرور"
+  },
+  "code":{
+    "code": "الكود"
+  },
+  "newpassword":{
+    "newpassword": "كلمة المرور الجديدة"
+  },
+  "confirmpassword":{
+    "confirmpassword": "تأكيد كلمة المرور"
+  },
+  "remember":{
+    "remember": "تذكرني"
+  },
+  "forgot":{
+    "forgot": "نسيت كلمة المرور"
+  },
+  "name":{
+    "name": "الاسم"
+  },
+  "phone":{
+    "phone": "رقم الهاتف"
+  },
+  "address":{
+    "address": "العنوان"
+  },
+  "city":{
+    "city": "المدينة"
+  },
+  "details":{
+    "details": "التفاصيل"
+  },
+  "image":{
+    "image": "صورة"
+  },
+  "description":{
+    "description": "وصف"
+  },
+  "title":{
+    "title": "العنوان"
+  },
+  "quantity":{
+    "quantity": "الكمية"
+  },
+  "price":{ 
+    "price": "السعر"  
+  },
+  "total":{
+    "total": "المجموع"
+  } ,
+  "status":{
+    "status": "الحالة"
+  },  
+  "date":{
+    "date": "التاريخ"
+  },
+  "action":{
+    "action": "العمليات"
+  },
+  "add":{
+    "add": "اضافة"
+  },
+  "edit":{
+    "edit": "تعديل"
+  },
+  "delete":{
+    "delete": "حذف"
+  },
+  "yes":{
+    "yes": "نعم"
+  },
+  "no":{
+    "no": "لا"
+  },
+  "cancel":{
+    "cancel": "الغاء"
+  },
+  "save":{
+    "save": "حفظ"
+  },
+  "close":{
+    "close": "اغلاق"
+  },
+  "view":{
+    "view": "عرض"
+  }
+}

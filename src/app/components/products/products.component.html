@@ -1,0 +1,44 @@
+
+<section class="py-2">
+
+  <h2 class="text-center text-main" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">All Products</h2>
+
+  <div class="row g-2 justify-content-between m-0">
+    @for (product of productData; track product._id) {
+
+      <div  class="col-sm-6 col-md-2 ">
+        <div class="product p-2">
+          @if(!wishListData.includes($any(product._id))){
+            <i (click)="addFav(product.id)" class="fa-regular fa-heart heart cr "></i>
+          }
+          @else if (wishListData.includes($any(product._id))) {
+            <i (click)="removeFav(product.id)" class="fa-solid fa-heart heart  cr "></i>
+          }
+            <header role="button" [routerLink]="['/productdetails', product._id]">
+                <img class="w-100" [src]="product.imageCover" [alt]="product.title">
+                <h3 class="h6">{{product.title | cutText : 2}}</h3>
+                <h4 class="h6">{{product.category.name}}</h4>
+                <div class="d-flex align-items-center justify-content-between small">
+                    <span>{{product.price | currency :'E£'}}</span>
+                    <div>
+                      @for (num of [1,2,3,4,5].slice(0, product.ratingsAverage); track $index) {
+                        <span> <i class="fas fa-star rating-color"></i> </span>
+                      }
+                      @if (product.ratingsAverage % 1 !== 0) {
+                        <i class="fa-solid fa-star-half-stroke rating-color"></i>
+                      }
+                    <span class="text-muted" >{{product.ratingsAverage}}</span>
+                    </div>
+                </div>
+            </header>
+
+                <button (click)="addProduct(product._id)" class="btn-main w-100 ">+AddToCart</button>
+
+        </div>
+    </div>
+
+
+    }
+  </div>
+
+</section>
